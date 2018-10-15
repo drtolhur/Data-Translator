@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>An Anonymous Pen on CodePen</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<div style="margin:0 auto; width:330px; border:1px solid black; padding:10px">
+    Original Data: &nbsp;&nbsp;&nbsp;
+    <input id="text" />
+  <p>
+    From:
+    <select id="from">
+      <option value="bin">Binary</option>
+      <option value="hex">Hexadecimal</option>
+      <option value="dec">Decimal</option>
+      <option value="asc">ASCII</option>
+    </select>
+    &nbsp;&nbsp;To:
+    <select id="con">
+      <option value="bin">Binary</option>
+      <option value="dec">Decimal</option>
+      <option value="inv">Inverted</option>
+      <option value="asc">ASCII</option>
+      <option value="hex">Hexadecimal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+    </select>
+    <br>
+    <span style="display:inline-block; width:100px; height:20px"></span>
+    <button id="swap"; style="background-color:blue; color:white" ;>
+      <-- Swap -->
+    </button>
+  </p>
+  <p>
+    Converted Data:
+    <input id="converted" />
+  </p>
+  <button id="convert"; style="background-color:red; color:white";>CONVERT ></button>
+  <span style="display:inline-block; width:92px;"></span>
+  <button id="clear"; style="background-color:green; color:white";>Clear &nbsp; x</button>
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>An Anonymous Pen on CodePen</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<div style="margin:0 auto; padding:10px; border:1px solid black; width:290px";>
+    Original Data: &nbsp;&nbsp;&nbsp;
+    <input id="original" type="text" style="text-align:center; width:150px" onfocus="if(this.value == 'Enter data to convert') this.value=''; this.style.backgroundColor='white'" autofocus />
+  <p>
+    From:
+    <select id="from">
+      <option value="asc">ASCII</option>
+      <option value="bin">Binary</option>
+      <option value="dec">Decimal</option>
+      <option value="hex">Hexadecimal</option>
+    </select>
+    &nbsp;&nbsp;To:
+    <select id="to">
+      <option value="asc">ASCII</option>
+      <option value="bin" selected="selected">Binary</option>
+      <option value="dec">Decimal</option>
+      <option value="hex">Hexadecimal</option>
+      <option value="inv">Inverted</option>
+    </select>
+    <button id="swap"; style="margin-left:37%; background-color:#cfecf4; color:black; border-radius:7px" ;>
+      <-- Swap -->
+    </button>
+  </p>
+  <p>
+    Converted Data:
+    <input id="converted" style="text-align:center; width:150px" readonly/>
+  </p>
+  <div align="center">
+    <button id="convert"; style="background-color:#6fae62; color:white; border-radius:7px";><strong>Convert &nbsp; ></strong></button>
+    <span style="display:inline-block; width:1px;"></span>
+    <button id="clear"; style="background-color:#e17855; color:white; border-radius:7px";>Clear &nbsp; x</button>
+  </div>
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
